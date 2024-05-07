@@ -1,7 +1,7 @@
 let homeScoreCard = document.getElementById("home-score");
-let guestScoreCard = document.getElementById("guest-score");
+let awayScoreCard = document.getElementById("away-score");
 let homeScore = 0; // starting score
-let guestScore = 0; // starting score
+let awayScore = 0; // starting score
 
 
 function add(num, team) {
@@ -13,11 +13,11 @@ function add(num, team) {
         
     } 
 
-    if (team == "guest") {
+    if (team == "away") {
         
-        guestScore += Number(num);
-        console.log("Guest Score: ", guestScore);
-        guestScoreCard.textContent = guestScore;
+        awayScore += Number(num);
+        console.log("away Score: ", awayScore);
+        awayScoreCard.textContent = awayScore;
     }
 
 }
@@ -29,9 +29,9 @@ function reset(team) {
         homeScoreCard.textContent = homeScore;
     }
 
-    if (team == "guest") {
-        guestScore = 0;
-        guestScoreCard.textContent = guestScore;
+    if (team == "away") {
+        awayScore = 0;
+        awayScoreCard.textContent = awayScore;
     }
 
 
