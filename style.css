@@ -1,0 +1,85 @@
+/* CSS Variables */
+
+:root {
+    --backgorund: #1B244A;
+
+}
+
+/* Font */
+@font-face {
+    font-family: "Cursed Timer ULiL";
+    src: url(Fonts/CursedTimerUlil-Aznm.ttf);
+
+}
+
+
+/* ============ Score Board =============*/
+body {
+    background-color: var(--backgorund);
+    margin: 0;
+    text-align: center;
+}
+
+.scoreboard {
+    color: gainsboro;
+    display: flex;
+    column-gap: 4em;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Set height to full viewport height */
+
+    border: 2px solid yellow;
+
+}
+
+
+.scorecard {
+    height: 200px;
+    width: 200px;
+    
+}
+
+
+.score{
+    background: #0a0001;
+    color: #F94F6D;
+    font-size: 70px;
+    font-family: "Cursed Timer ULiL";
+    width: 120px;
+    margin: 40px;
+    text-align: center;
+    padding-top: 0.2em;
+    border: 2px solid #F94F6D;
+    border-radius: 10px;
+
+}
+
+
+/* ========= BUTTONS ========== */
+
+.buttons-div {
+    display: flex;
+    column-gap: 0.4em;
+
+}
+
+button {
+    cursor: pointer;
+    width: 45px;
+    height: 45px;
+    color: #9AABD8;
+    background-color: transparent;
+    border: 3px solid #9AABD8;
+    border-radius: 10px;
+    font-weight: 600;
+    font-family: "Cursed Timer ULiL";
+
+}
+
+.reset-btn {
+    width: 60px;
+}
+
+button:hover {
+    background-color: #0C4A6E;
+}
